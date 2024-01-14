@@ -1,10 +1,14 @@
 # sqq-postal
 A simple script developed and running on qbcore framework
-
+There are more than 7 script languages, including... ar, en, zh, fr, es, de, ru,
 This script was created by Snnacqq
 
 [Discord](https://discord.gg/PWnxxHcpbr)
 [Original script](https://github.com/DevBlocky/nearest-postal)
+
+# Preview
+![Facecam1](https://github.com/SNACKGYG/sqq-postal/assets/97559522/d37b7b21-c66a-497d-9d7d-a68278bc3632)
+
 
 ### INSTALLATION التثبيت
 
