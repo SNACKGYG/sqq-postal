@@ -1,7 +1,10 @@
-# sqq postal
+# sqq-postal
+A simple script developed and running on qbcore framework
 
 This script was created by Snnacqq
-N7 Store Discord https://discord.gg/PWnxxHcpbr
+
+[Discord](https://discord.gg/PWnxxHcpbr)
+[Original script](https://github.com/DevBlocky/nearest-postal)
 
 # INSTALLATION التثبيت
 
@@ -28,3 +31,7 @@ N7 Store Discord https://discord.gg/PWnxxHcpbr
         functionName = "sqq-postal:start"
     },
 ```
+# Idle usage
+
+![image](https://github.com/SNACKGYG/sqq-postal/assets/97559522/61ec56c1-485e-42a2-9f5b-a2f82b0d1148)
+
