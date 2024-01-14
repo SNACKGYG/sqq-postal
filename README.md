@@ -1,6 +1,8 @@
 # sqq-postal
 A simple script developed and running on qbcore framework
+
 There are more than 7 script languages, including... ar, en, zh, fr, es, de, ru,
+
 This script was created by Snnacqq
 
 [Discord](https://discord.gg/PWnxxHcpbr)
@@ -38,7 +40,9 @@ This script was created by Snnacqq
 
 ### Commands
 `/postal` - Open menu command.
+
 `/postald` - blips removal command.
+
 `/postalt` - Display postal at the beginning of the script.
 
 ### Idle usage
