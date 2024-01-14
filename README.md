@@ -6,6 +6,7 @@ There are more than 7 script languages, including... ar, en, zh, fr, es, de, ru,
 This script was created by Snnacqq
 
 [Discord](https://discord.gg/PWnxxHcpbr)
+
 [Original script](https://github.com/DevBlocky/nearest-postal)
 
 # Preview
