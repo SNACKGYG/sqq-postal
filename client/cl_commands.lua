@@ -27,7 +27,7 @@ AddEventHandler('sqq-postal:start',function()
     })
 
     local postalcod = postal.postalcod
-    if postal then  
+    if postal ~= nil then  
     
         if config.SystemDebug then print("^5SystemDebug^7: ^Code cl_commands^7: [^4 if postal = "..postalcod.." ^7]") end
 
