@@ -9,7 +9,7 @@ This script was created by Snnacqq
 
 [Original script](https://github.com/DevBlocky/nearest-postal)
 
-# Preview
+# Preview معاينة
 ![Facecam1](https://github.com/SNACKGYG/sqq-postal/assets/97559522/d37b7b21-c66a-497d-9d7d-a68278bc3632)
 
 
