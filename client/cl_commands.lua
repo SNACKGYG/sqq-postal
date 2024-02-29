@@ -8,8 +8,10 @@ local format = string.format
 
 
 RegisterNetEvent('sqq-postal:start')
-AddEventHandler('sqq-postal:start',function()
-    if config.SystemDebug then print("^5SystemDebug^7: ^Code cl_commands^7: [^8 sqq-postal:start AddEventHandler ^7]") end
+AddEventHandler('sqq-postal:start', function()
+    if config.SystemDebug then
+        print("^5SystemDebug^7: ^Code cl_commands^7: [^8 sqq-postal:start AddEventHandler ^7]")
+    end
 
     local PlayerData = Core.Functions.GetPlayerData()
 
@@ -21,28 +23,32 @@ AddEventHandler('sqq-postal:start',function()
                 text = LANG["InputText"],
                 name = "postalcod",
                 type = "text",
-                isRequired = true 
+                isRequired = true
             },
         },
     })
 
-    local postalcod = postal.postalcod
-    if postal ~= nil then  
-    
-        if config.SystemDebug then print("^5SystemDebug^7: ^Code cl_commands^7: [^4 if postal = "..postalcod.." ^7]") end
-
-    local userPostal = upper(postalcod)
-    local foundPostal
-
-    for _, p in ipairs(postals) do
-        if upper(p.code) == userPostal then
-            foundPostal = p
-            break
+    if postal ~= nil then
+        if config.SystemDebug then
+            print("^5SystemDebug^7: ^Code cl_commands^7: [^4 if postal = "..postalcod.." ^7]")
         end
-    end
 
-    if foundPostal then
-        if pBlip then RemoveBlip(pBlip.hndl) end
+        local postalcod = postal.postalcod
+        local userPostal = upper(postalcod)
+        local foundPostal
+
+        for _, p in ipairs(postals) do
+            if upper(p.code) == userPostal then
+                foundPostal = p
+                break
+            end
+        end
+
+        if foundPostal then
+            if pBlip then
+                RemoveBlip(pBlip.hndl)
+            end
+
             local blip = AddBlipForCoord(foundPostal[1][1], foundPostal[1][2], 0.0)
             pBlip = { hndl = blip, p = foundPostal }
             SetBlipRoute(blip, true)
@@ -55,9 +61,8 @@ AddEventHandler('sqq-postal:start',function()
 
             Core.Functions.Notify(LANG["drawRouteText"]..""..foundPostal.code, "success", 5000)
         else
-            Core.Functions.Notify(LANG["notExistText"], "error" , 5000)
+            Core.Functions.Notify(LANG["notExistText"], "error", 5000)
         end
-        
     else
         if config.SystemDebug then print("^5SystemDebug^7: ^Code cl_commands^7: [^3 else if postal ^7]") end
     end
