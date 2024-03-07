@@ -8,8 +8,8 @@ config = {
     -- Basic system settings
     Settings = { -- الإعدادات الأساسية لنظامك
         prefix = "QBCore",
-        Core = 'TB-core',
-        Input = 'TB-input',    
+        Core = 'qb-core',
+        Input = 'qb-input',    
     },
 
     -- Display postal at the beginning of the script
